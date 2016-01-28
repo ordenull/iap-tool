@@ -1,0 +1,32 @@
+#!wing
+#!version=5.0
+##################################################################
+# Wing IDE project file                                          #
+##################################################################
+[project attributes]
+proj.build-cmd = {None: ('default',
+                         None)}
+proj.directory-list = [{'dirloc': loc('iap_tool'),
+                        'excludes': (),
+                        'filter': u'*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True}]
+proj.file-list = [loc('setup.py')]
+proj.file-type = 'shared'
+proj.initial-dir = {None: ('custom',
+                           u'${WING:PROJECT_DIR}/iap_tool')}
+proj.launch-config = {loc('iap_tool/iap_tool.py'): ('project',
+        (u'--webserver 8080',
+         ''))}
+proj.main-file = loc('iap_tool/iap_tool.py')
+proj.pyexec = {None: ('custom',
+                      u'${WING:PROJECT_DIR}/../bin/python')}
+proj.shared-attribute-names = ['proj.shared-attribute-names',
+                               'proj.directory-list',
+                               'proj.build-cmd',
+                               'proj.initial-dir',
+                               'proj.pyexec',
+                               'proj.file-type',
+                               'proj.main-file',
+                               'proj.launch-config']
